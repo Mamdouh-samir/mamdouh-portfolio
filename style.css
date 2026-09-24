@@ -920,5 +920,103 @@ body{
     margin:5px 0;
 }
 
+/* CERTIFICATIONS SECTION */
+
+.certifications{
+
+    padding:120px 60px;
+
+    background:#04111d;
+}
+
+.certifications-container{
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.cert-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    margin-top:50px;
+}
+
+.cert-card{
+
+    background:#082234;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:1px solid rgba(57,214,233,.15);
+
+    transition:.3s;
+}
+
+.cert-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#39d6e9;
+}
+
+.cert-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+}
+
+.cert-card h3{
+
+    color:#39d6e9;
+
+    margin-bottom:10px;
+}
+
+.cert-card p{
+
+    color:#dddddd;
+
+    margin-bottom:20px;
+}
+
+.cert-card a{
+
+    text-decoration:none;
+
+    color:white;
+
+    border:1px solid #39d6e9;
+
+    padding:12px 24px;
+
+    border-radius:10px;
+}
+
+.cert-card a:hover{
+
+    background:#39d6e9;
+
+    color:#04111d;
+}
+
 
 
