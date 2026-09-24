@@ -76,7 +76,7 @@ body{
 
 .hero{
 
-    min-height:100vh;
+    min-height:90vh;
 
     display:flex;
 
@@ -102,6 +102,7 @@ body{
     justify-content:space-between;
 
     gap:80px;
+
 }
 
 .hero-text{
@@ -126,11 +127,17 @@ body{
 
 .hero-text h1{
 
-    font-size:58px;
+    font-size:50px;
 
     font-weight:800;
 
+    line-height:1.2;
+
     margin-bottom:20px;
+
+    max-width:800px;
+}
+
 }
 
 .hero-text h2{
@@ -282,7 +289,7 @@ body{
 
 .container {
 
-    max-width: 1200px;
+    max-width: 1280px;
 
     margin: auto;
 }
@@ -328,5 +335,688 @@ body{
     font-size
 
 }
+
+/* ABOUT SECTION */
+
+.about{
+
+    padding:100px 60px;
+
+    background:#061622;
+}
+
+.about-container{
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.section-heading{
+
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+.section-heading h2{
+
+    font-size:42px;
+
+    color:#39d6e9;
+
+    margin-bottom:10px;
+}
+
+.section-heading p{
+
+    color:#cccccc;
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+}
+
+.about-text p{
+
+    color:#dddddd;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+    font-size:18px;
+}
+
+.about-cards{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+}
+
+.info-card{
+
+    background:#082234;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    border:1px solid rgba(57,214,233,.15);
+
+    transition:.3s;
+}
+
+.info-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#39d6e9;
+}
+
+.info-card h3{
+
+    color:#39d6e9;
+
+    margin-bottom:10px;
+}
+
+.info-card p{
+
+    color:#d9d9d9;
+}
+
+@media(max-width:900px){
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+    }
+
+    .about-cards{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* TRAINING SECTION */
+
+.training {
+
+    padding: 120px 60px;
+
+    background: #04111d;
+}
+
+.training-container {
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+.training-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-top: 50px;
+}
+
+.training-card {
+
+    background: #082234;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(57,214,233,.15);
+
+    transition: 0.3s;
+}
+
+.training-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #39d6e9;
+}
+
+.training-card h3 {
+
+    color: #39d6e9;
+
+    margin-bottom: 20px;
+}
+
+.training-card ul {
+
+    list-style: none;
+}
+
+.training-card li {
+
+    margin-bottom: 12px;
+
+    color: #dddddd;
+}
+
+.training-card li:before {
+
+    content: "✓ ";
+
+    color: #39d6e9;
+
+    font-weight: bold;
+}
+
+@media(max-width:900px){
+
+    .training-grid{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* GOVERNMENT ANALYTICS SECTION */
+
+.government{
+
+    padding:120px 60px;
+
+    background:#08121d;
+}
+
+.government-container{
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.government-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:50px;
+
+    margin-top:50px;
+}
+
+.government-text p{
+
+    color:#dddddd;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+
+    font-size:18px;
+}
+
+.government-process{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+}
+
+.process-card{
+
+    background:#082234;
+
+    padding:25px;
+
+    border-radius:16px;
+
+    border:1px solid rgba(57,214,233,.15);
+
+    transition:.3s;
+}
+
+.process-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#39d6e9;
+}
+
+.process-card h3{
+
+    color:#39d6e9;
+
+    margin-bottom:12px;
+}
+
+.process-card p{
+
+    color:#d8d8d8;
+}
+
+.confidentiality{
+
+    margin-top:50px;
+
+    background:#0b1f30;
+
+    padding:25px;
+
+    border-left:4px solid #39d6e9;
+
+    border-radius:10px;
+}
+
+.confidentiality h3{
+
+    color:#39d6e9;
+
+    margin-bottom:10px;
+}
+
+.confidentiality p{
+
+    color:#d8d8d8;
+
+    line-height:1.8;
+}
+
+@media(max-width:900px){
+
+    .government-content{
+
+        grid-template-columns:1fr;
+    }
+
+    .government-process{
+
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* SKILLS SECTION */
+
+.skills{
+
+    padding:120px 60px;
+
+    background:#04111d;
+}
+
+.skills-container{
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-top:50px;
+}
+
+.skill-card{
+
+    background:#0b2130;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid rgba(57,214,233,.15);
+}
+
+.skill-card h3{
+
+    color:#39d6e9;
+
+    margin-bottom:20px;
+}
+
+.skill-card span{
+
+    display:inline-block;
+
+    padding:8px 14px;
+
+    margin:5px;
+
+    border-radius:20px;
+
+    background:#082234;
+
+    border:1px solid rgba(57,214,233,.15);
+
+    color:white;
+}
+
+@media(max-width:900px){
+
+    .skills-grid{
+
+        grid-template-columns:1fr;
+    }
+}
+
+/* PROJECTS SECTION */
+
+.projects{
+
+    padding:120px 60px;
+
+    background:#06131f;
+}
+
+.projects-container{
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.project-card{
+
+    margin-top:50px;
+
+    background:#082234;
+
+    border:1px solid rgba(57,214,233,.15);
+
+    border-radius:20px;
+
+    padding:40px;
+}
+
+.project-badge{
+
+    display:inline-block;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    background:rgba(57,214,233,.15);
+
+    color:#39d6e9;
+
+    margin-bottom:20px;
+}
+
+.project-card h3{
+
+    color:white;
+
+    margin-bottom:20px;
+}
+
+.project-card p{
+
+    color:#dddddd;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+}
+
+.project-tags span{
+
+    display:inline-block;
+
+    margin:5px;
+
+    padding:8px 14px;
+
+    border-radius:20px;
+
+    background:#0b2130;
+
+    border:1px solid rgba(57,214,233,.15);
+}
+
+.github-btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    text-decoration:none;
+
+    color:white;
+
+    border:1px solid #39d6e9;
+
+    padding:12px 24px;
+
+    border-radius:10px;
+}
+
+.github-btn:hover{
+
+    background:#39d6e9;
+
+    color:#06131f;
+}
+
+
+.contact{
+
+    padding:120px 60px;
+
+    text-align:center;
+
+    background:#04111d;
+}
+
+.contact-container{
+
+    max-width:900px;
+
+    margin:auto;
+}
+
+.contact h2{
+
+    color:#39d6e9;
+
+    font-size:48px;
+
+    margin-bottom:20px;
+}
+
+.contact p{
+
+    color:#dddddd;
+
+    line-height:1.8;
+}
+
+.contact-info{
+
+    margin:30px 0;
+}
+
+.contact-info p{
+
+    font-size:20px;
+
+    margin:12px 0;
+}
+
+.contact-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-top:30px;
+}
+
+.contact-buttons a{
+
+    text-decoration:none;
+
+    color:white;
+
+    border:1px solid #39d6e9;
+
+    padding:14px 28px;
+
+    border-radius:12px;
+
+    transition:.3s;
+}
+
+.contact-buttons a:hover{
+
+    background:#39d6e9;
+
+    color:#04111d;
+}
+
+
+.footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#03101a;
+
+    border-top:1px solid rgba(57,214,233,.15);
+}
+
+.footer p{
+
+    color:#bdbdbd;
+
+    margin:5px 0;
+}
+
+/* CERTIFICATIONS SECTION */
+
+.certifications{
+
+    padding:120px 60px;
+
+    background:#04111d;
+}
+
+.certifications-container{
+
+    max-width:1200px;
+
+    margin:auto;
+}
+
+.cert-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    margin-top:50px;
+}
+
+.cert-card{
+
+    background:#082234;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    border:1px solid rgba(57,214,233,.15);
+
+    transition:.3s;
+}
+
+.cert-card:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#39d6e9;
+}
+
+.cert-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:10px;
+
+    margin-bottom:20px;
+}
+
+.cert-card h3{
+
+    color:#39d6e9;
+
+    margin-bottom:10px;
+}
+
+.cert-card p{
+
+    color:#dddddd;
+
+    margin-bottom:20px;
+}
+
+.cert-card a{
+
+    text-decoration:none;
+
+    color:white;
+
+    border:1px solid #39d6e9;
+
+    padding:12px 24px;
+
+    border-radius:10px;
+}
+
+.cert-card a:hover{
+
+    background:#39d6e9;
+
+    color:#04111d;
+}
+
 
 
